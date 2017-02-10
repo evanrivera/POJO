@@ -4,14 +4,14 @@ public class DrPepperLogoTest {
 
 	public void testGetHeight(){
 		System.out.println("Testing DrPepperLogo::getHeight");
-		DrPepperLogo DrPepperLogo = new DrPepperLogo(2.0);
+		DrPepperLogo drPepperLogo = new DrPepperLogo(2.0);
 		assert(DrPepperLogo.getHeight() == 2.0);
 
 	}
 
 	public static void main(String... args){
-		DrPepperLogoTest DrPepperLogoTest = new DrPepperLogoTest();
-		DrPepperLogoTest.testGetHeight();
+		DrPepperLogoTest drPepperLogoTest = new DrPepperLogoTest();
+		drPepperLogoTest.testGetHeight();
 		System.out.println("DrPepperLogoTest completed");
 	}
 }
