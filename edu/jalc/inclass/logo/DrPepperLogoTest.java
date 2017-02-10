@@ -12,6 +12,6 @@ public class DrPepperLogoTest {
 	public static void main(String... args){
 		DrPepperLogoTest drPepperLogoTest = new DrPepperLogoTest();
 		drPepperLogoTest.testGetHeight();
-		System.out.println("DrPepperLogoTest completed");
+		System.out.println("DrPepperogoTest completed");
 	}
 }
