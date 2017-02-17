@@ -1,24 +1,24 @@
-package edu.jalc.inclass.bottle;
+package edu.jalc.inclass.bucket;
 
-import edu.jalc.inclass.label.SodaBottleLabel;
-import edu.jalc.inclass.lid.SodaBottleLid;
-import edu.jalc.inclass.liquid.Soda;
+import edu.jalc.inclass.label.PaintBucketLabel;
+import edu.jalc.inclass.lid.PaintBucketCover;
+import edu.jalc.inclass.liquid.Paint;
 
 public class SodaBottle {
 
 	private final double capacity;
-	private SodaBottleLid lid;
-	private Soda soda;
-	private final SodaBottleLabel label;
+	private PaintBucketCover cover;
+	private Paint paint;
+	private final PaintBucketLabel label;
 
-	private SodaBottle() throws Exception {
+	private PaintBucket() throws Exception {
 		this.capacity = 0;
-		this.setLid(null);
-		this.soda = null;
+		this.setCover(null);
+		this.paint = null;
 		this.label = null;
 	}
 
-	SodaBottle(double capacity, SodaBottleLid lid, Soda soda, SodaBottleLabel label) throws Exception {
+	PaintBucket(double capacity, PaintBucketCover cover, Paint paint, SodaBottleLabel label) throws Exception {
 		this.capacity = capacity;
 		this.setLid(lid);
 		this.setSoda(soda);
