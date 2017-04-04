@@ -1,15 +1,15 @@
 package edu.jalc.inclass.color;
 
-public class RGBcolor {
+public class RGBColor {
 	private final byte red;
 	private final byte green;
 	private final byte blue;
 
-	private RGBcolor(){
+	private RGBColor(){
 		this.red = this.green = this.blue = 0;
 	}
 
-	public RGBcolor(byte red, byte green, byte blue){
+	public RGBColor(byte red, byte green, byte blue){
 		this.red = red;
 		this.green = green;
 		this.blue = blue;
