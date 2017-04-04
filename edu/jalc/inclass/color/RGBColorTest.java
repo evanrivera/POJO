@@ -1,11 +1,11 @@
 package edu.jalc.inclass.color;
 
-public class RGBcolortest {
+public class RGBColorTest {
 
 	public void testGetRed(){
-		System.out.println("Testing RGBcolor:getRed");
-		RGBcolor rgbcolor = new RGBcolor((byte)1,(byte)1,(byte)1);
-		assert(rgbcolor.getRed() == (byte)1);
+		System.out.println("Testing RGBColor:getRed");
+		RGBColor rgbColor = new RGBColor((byte)1,(byte)1,(byte)1);
+		assert(rgbColor.getRed() == (byte)1);
 	}
 
 	public void testGetGreen(){
