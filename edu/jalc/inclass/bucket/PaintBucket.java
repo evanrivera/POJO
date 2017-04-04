@@ -1,10 +1,10 @@
 package edu.jalc.inclass.bucket;
 
 import edu.jalc.inclass.label.PaintBucketLabel;
-import edu.jalc.inclass.lid.PaintBucketCover;
+import edu.jalc.inclass.cover.PaintBucketCover;
 import edu.jalc.inclass.liquid.Paint;
 
-public class SodaBottle {
+public class PaintBucket {
 
 	private final double capacity;
 	private PaintBucketCover cover;
@@ -18,26 +18,26 @@ public class SodaBottle {
 		this.label = null;
 	}
 
-	PaintBucket(double capacity, PaintBucketCover cover, Paint paint, SodaBottleLabel label) throws Exception {
+	PaintBucket(double capacity, PaintBucketCover cover, Paint paint, PaintBucketLabel label) throws Exception {
 		this.capacity = capacity;
-		this.setLid(lid);
-		this.setSoda(soda);
+		this.setCover(cover);
+		this.setPaint(paint);
 		this.label = label;
 	}
 
 	double getCapacity(){ return capacity; }
-	SodaBottleLid getLid(){	return this.lid; }
-	Soda getSoda(){ return this.soda; }
-	SodaBottleLabel getLabel(){ return this.label; }
+	PaintBucketCover getCover(){	return this.cover; }
+	Paint getPaint(){ return this.paint; }
+	PaintBucketLabel getLabel(){ return this.label; }
 
-	SodaBottle setLid(SodaBottleLid lid) throws Exception {
-		if(lid == null) throw new Exception("SodaBottleLid cannot be null");
-		this.lid = lid;
+	PaintBucket setCover(PaintBucketCover cover) throws Exception {
+		if(cover == null) throw new Exception("PaintBucketCover cannot be null");
+		this.cover = cover;
 		return this;
 	}
 
-	SodaBottle setSoda(Soda soda){
-		this.soda = soda;
+	PaintBucket setPaint(Paint paint){
+		this.paint = paint;
 		return this;
 	}
 }
