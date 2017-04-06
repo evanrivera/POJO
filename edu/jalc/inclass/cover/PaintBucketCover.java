@@ -1,17 +1,17 @@
-package edu.jalc.inclass.lid;
+package edu.jalc.inclass.cover;
 
-public class SodaBottleLid {
+public class PaintBucketCover {
 
 	private boolean attached;
 	private final double height;
 	private final double radius;
 
-	private SodaBottleLid(){
+	private PaintBucketCover(){
 		this.attached = false;
 		this.height = this.radius = 0;
 	}
 
-	public SodaBottleLid(double height, double radius){
+	public PaintBucketCover(double height, double radius){
 		this.height = height;
 		this.radius = radius;
 		this.attached = false;
@@ -21,12 +21,12 @@ public class SodaBottleLid {
 	public double getRadius(){ return this.radius; }
 	public boolean isAttached(){ return this.attached; }
 
-	public SodaBottleLid attach(){
+	public PaintBucketCover attach(){
 		this.setAttached(true);
 		return this;
 	}
 
-	public SodaBottleLid detach(){
+	public PaintBucketCover detach(){
 		this.setAttached(false);
 		return this;
 	}
