@@ -9,23 +9,23 @@ public class RGBColorTest {
 	}
 
 	public void testGetGreen(){
-		System.out.println("Testing RGBcolor:getGreen");
-		RGBcolor rgbcolor = new RGBcolor((byte)1,(byte)1,(byte)1);
-		assert(rgbcolor.getRed() == (byte)1);
+		System.out.println("Testing RGBColor:getGreen");
+		RGBcolor rgbColor = new RGBcolor((byte)1,(byte)1,(byte)1);
+		assert(rgbColor.getRed() == (byte)1);
 	}
 
 	public void testGetBlue(){
-		System.out.println("Testing RGBcolor:getBlue");
-		RGBcolor rgbcolor = new RGBcolor((byte)1,(byte)1,(byte)1);
-		assert(rgbcolor.getRed() == (byte)1);
+		System.out.println("Testing RGBColor:getBlue");
+		RGBcolor rgbColor = new RGBcolor((byte)1,(byte)1,(byte)1);
+		assert(rgbColor.getRed() == (byte)1);
 	}
 
 	public static void main(String... args){
-		RGBcolortest rgbcolortest = new RGBcolortest();
+		RGBColorTest rgbcolortest = new RGBColorTest();
 		rgbcolortest.testGetRed();
 		rgbcolortest.testGetGreen();
 		rgbcolortest.testGetBlue();
 
-		System.out.println("RGBcolortest Completed");
+		System.out.println("RGBColorTest Completed");
 	}
 }
