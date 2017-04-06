@@ -1,20 +1,20 @@
 package edu.jalc.inclass.liquid;
 
-public class Soda {
+public class Paint {
 
 	private double volume;
 
-	public Soda(){
+	public Paint(){
 		this.setVolume(0.0);
 	}
 
-	public Soda(double volume){
+	public Paint(double volume){
 		this.setVolume(volume);
 	}
 
 	public double getVolume(){ return this.volume; }
 
-	public Soda setVolume(double volume){
+	public Paint setVolume(double volume){
 		this.volume = volume;
 		return this;
 	}
