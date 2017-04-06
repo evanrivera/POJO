@@ -1,36 +1,36 @@
 package edu.jalc.inclass.label;
 
 
-import edu.jalc.inclass.color.RGBcolor;
-import edu.jalc.inclass.logo.DrPepperLogo;
+import edu.jalc.inclass.color.RGBColor;
+import edu.jalc.inclass.label.PaintBucketLabel;
 
 public class SodaBottleLabel {
 
 	private final double height;
-	private final RGBcolor rgbcolor;
-	private final DrPepperLogo drPepperLogo;
+	private final RGBColor rgbcolor;
+	private final PaintBucketLabel paintBucketLabel;
 
-	private SodaBottleLabel(){
+	private PaintBucketLabel(){
 		this.height = 0;
 		this.rgbcolor = null;
-		this.drPepperLogo = null;
+		this.paintBucketLabel = null;
 	}
 
-	public SodaBottleLabel(double height, RGBcolor rgbcolor, DrPepperLogo drPepperLogo){
+	public PaintBucketLabel(double height, RGBColor rgbcolor, PaintBucketLabel paintBucketLabel){
 		this.height = height;
 		this.rgbcolor = rgbcolor;
-		this.drPepperLogo = drPepperLogo;
+		this.paintBucketLabel = paintBucketLabel;
 	}
 
 	public double getHeight() {
 		return height;
 	}
 
-	public RGBcolor getRGBcolor() {
+	public RGBColor getRGBColor() {
 		return rgbcolor;
 	}
 
-	public DrPepperLogo getDrPepperLogo() {
-		return drPepperLogo;
+	public PaintBucketLabel getPaintBucketLabel() {
+		return paintBucketLabel;
 	}
 }
